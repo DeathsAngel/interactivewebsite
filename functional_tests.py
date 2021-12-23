@@ -6,7 +6,7 @@ import unittest
 from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import NoSuchElementException
 
-from lists.views import LoginPage 
+# from lists.views import LoginPage 
 
 class FunctionalTest(unittest.TestCase):
     def setUp(self):

@@ -4,5 +4,16 @@
     </head>
     <body>
         <h1 id="confirmText">{{ userName.personName }}'s recipes</h1>
+        <input type="text" id="name" placeholder="Recipe Name"/>
+        <input type="text" id="directions" placeholder="Recipe Directions"/>
+        <input type="text" id="ingredients" placeholder="ingredients"/>
+        <input type="submit" id="submitBtn" value="Submit"/>
+        <div>
+            <table id="theTable" class="table">
+                {% for item in list.item_set.all %}
+                  <tr><td>{{ forloop.counter }}: {{ item.text }}</td></tr>
+                {% endfor %}
+            </table>
+        </div>
     </body>
 </html>
